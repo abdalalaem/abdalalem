@@ -1,4 +1,4 @@
-name: TOMI
+name: amir
  
 on: [push, pull_request]
  
@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
  
-      - name: Setup Python
+      - name: Setup amiraikb
         uses: actions/setup-python@v1
         with:
           python-version: 3.9
@@ -31,6 +31,6 @@ jobs:
           commit_message: '`something`'
           commit_options: '--no-verify'
           repository: .
-          commit_user_name: XtomiSN
+          commit_user_name: amir
           commit_user_email: 90341045+XtomiSN@users.noreply.github.com
           commit_author: XtomiSN <90341045+XtomiSN@users.noreply.github.com>
