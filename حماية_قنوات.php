@@ -1,6 +1,6 @@
 <?php 
 ob_start();
-$marcus = '877825015:AAGFD02xvGnjazzum7AESEyQuxecv72gr3E';
+$marcus = '877825015:5768212989:AAHPKFRsexsz7tQ0eYQ4Vq-ETEB82veFPb4';
 define('API_KEY',$marcus);
 echo file_get_contents("https://api.telegram.org/bot" . API_KEY . "/setwebhook?url=" . $_SERVER['SERVER_NAME'] . "" . $_SERVER['SCRIPT_NAME']);
 function bot($method,$datas=[]){
