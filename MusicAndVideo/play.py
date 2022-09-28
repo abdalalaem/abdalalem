@@ -110,7 +110,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**اެبشࢪ ثواެني بس اެبحث 🌵.**")
+            huehue = await replied.reply("**اެبشࢪ امير ثواެني بس اެبحث 🌵.**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -165,7 +165,7 @@ async def play(client, m: Message):
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
-                await huehue.edit("لم يتم العثور على شيء , اعطني اسم المغني كاملℹ️")
+                await huehue.edit("لم يتم العثور على شيء , امير اعطني اسم المغني كاملℹ️")
             else:
                 songname = search[0]
                 url = search[1]
@@ -219,7 +219,7 @@ async def vplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**اެبشࢪ ثواެني بس اެبحث 🌵.**")
+            huehue = await replied.reply("**اެبشࢪ امير ثواެني بس اެبحث 🌵.**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -284,7 +284,7 @@ async def vplay(client, m: Message):
             )
         else:
             await m.delete()
-            huehue = await m.reply("**اެبشࢪ ثواެني بس اެبحث 🌵.")
+            huehue = await m.reply("**اެبشࢪ امير ثواެني بس اެبحث 🌵.")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
