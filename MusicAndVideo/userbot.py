@@ -30,7 +30,7 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(filters.command(["بنك"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command([" بنك"], prefixes=f"{HNDLR}"))
 async def ping(client, m: Message):
     await m.delete()
     start = time()
@@ -67,9 +67,9 @@ async def restart(client, m: Message):
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-<b>هݪاެ بࢪۅ 🥇 {m.from_user.mention}!
+<b> هݪاެ بࢪۅ 🥇 {m.from_user.mention}!
 
-🩸 يمديك تستخدم ذي الاوامر في المجموعة والخاص 
+🩸 المطور امير يمديك تستخدم ذي الاوامر في المجموعة والخاص امير
 -›  {HNDLR}ش - بالرد على ملف صوتي او اسم اغنية 
 -›  {HNDLR}ف  - بالرد على مقطع فيديو او اسم فيديو
 -›  {HNDLR}الانتضار - لرؤية قائمة الانتضار
