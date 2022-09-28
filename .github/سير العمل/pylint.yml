@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@v2
  
       - name: Setup amiraikb
-        uses: actions/setup-python@v1
+        uses: actions/setup-aaaxx1z@v1
         with:
           python-version: 3.9
  
